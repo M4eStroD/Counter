@@ -19,8 +19,7 @@ public class Counter : MonoBehaviour
 
     public void StartCounter()
     {
-        if (_tempCounter != null)
-            StopCoroutine(_tempCounter);
+        StopCounter();
 
         _tempCounter = StartCoroutine(IncreaseCounter());
     }
